@@ -1,0 +1,32 @@
+html {
+    --h: 10vw; /* height of each diamond */
+    --w: calc(5.196*var(--h)); /*width of each diamond*/
+    /* --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c; */
+    --c1: #2A1077;
+    /* --c2: #36177C; */
+    /* --c3: #411D7F; */ 
+    
+    /* background:
+      repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
+       calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+      repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg) no-repeat;
+    background-size: var(--s) calc(var(--s)*0.577); */
+
+    /* background:
+      /* repeating-conic-gradient(from 60deg,#0000 0 60deg,var(--c1) 0 180deg) 0 0,
+      repeating-conic-gradient(from 60deg,#0000 0 60deg,var(--c2) 0 180deg) var(--w) 0,
+      repeating-conic-gradient(from 60deg,#0000 0 60deg,var(--c3) 0 180deg) calc(var(--w)*2) 0,
+      
+      repeating-conic-gradient(from 60deg,#0000 0 60deg,var(--c1) 0 180deg) calc(var(--w)*3/2) calc(var(--h)/2),
+      repeating-conic-gradient(from 60deg,#0000 0 60deg,var(--c2) 0 180deg) calc(var(--w)*5/2) calc(var(--h)/2),
+      repeating-conic-gradient(from 60deg,#0000 0 60deg,var(--c3) 0 180deg) calc(var(--w)/2) calc(var(--h)/2);
+      repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg) no-repeat; */
+
+    background-image: url(imgs/background.svg);
+    background-size: var(--w) var(--h);
+    background-color: #2A1077;
+    
+  }
+  
