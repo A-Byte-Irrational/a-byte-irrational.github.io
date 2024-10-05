@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Byte Irrational</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/logo-abi.png">
+    <script>
+        let toggle=id=>{
+            let pdf = document.getElementById(id);
+            if(pdf.classList.contains('hidden'))
+                pdf.classList.remove('hidden');
+            else pdf.classList.add('hidden');
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <a href="../home"><img src="../imgs/logo-abi.png" class="title-img"></a>
+            <a href="../home" class="navlink">A Byte Irrational 15065</a>
+            <a href="https://en.wikipedia.org/wiki/Hexadecimal" class="navlink grayed">0x3AD9</a>
+        </div>
+        <div class="navbar">
+            <div class="navbar">
+                <a href="../home" class="navlink">Home</a>
+                <a href="../about" class="navlink">About</a>
+                <a href="../robots" class="navlink">Robots</a>
+                <a href="../portfolios" class="navlink grayed">Portfolios</a>
+                <a href="mailto:ftc15065@gmail.com" class="navlink">Contact Us!</a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <h1>Engineering Portfolios</h1>
+        <p>You can download and view our portfolios from previous seasons here.</p>
+        <h2>2023-2024: Center Stage &mdash;
+            <a onclick="toggle('24');">View</a>, 
+            <a href="center-stage.pdf">Download</a>
+        </h2>
+        <object data="center-stage.pdf" class="pdf hidden" width="100%" id="24"></object>
+        
+        <h2>2022-2023: Power Play &mdash;
+            <a onclick="toggle('23');">View</a>,
+            <a href="power-play.pdf">Download</a>
+        </h2>
+        <object data="power-play.pdf" class="pdf hidden" width="100%" id="23"></object>
+        
+        <h2>2021-2022: Freight Frenzy &mdash;
+            <a onclick="toggle('22');">View</a>, 
+            <a href="freight-frenzy.pdf">Download</a>
+        </h2>
+        <object data="freight-frenzy.pdf" class="pdf hidden" width="100%" id="22"></object>
+    </div>
+</body>
+</html>
