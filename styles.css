@@ -17,12 +17,15 @@ html {
 }
 
 body {
+    min-height: 100vh;
     background-color: var(--purple);
     color: var(--white);
     min-height: 100vh;
     margin: 0;
     font-family: 'Inter Tight';
     position:relative;
+    display: flex;
+    flex-direction: column;
 }
 
 strong {
@@ -85,16 +88,18 @@ a.navlink:hover {
 
 .footer {
     width: 100%;
-    position: absolute;
-    bottom: 0px;
+    /* position: absolute; */
+    /* bottom: 0px; */
     display: flex;
     justify-content: center;
     background-color: var(--dark-purple);
     align-items:center;
-    padding: 0.7vh;
+    /* padding: 0.7vh; */
     font-size: var(--header-font-height);
     /* box-shadow: 0 1px 10px 0 black; */
     gap: 1vw;
+    flex-shrink:0;
+    box-shadow: 0 1px 10px 0 black;
 }
 
 .foot>img {
@@ -151,6 +156,7 @@ a.navlink:hover {
 }
 .main {
     margin: 0 10vw;
+    flex: 1 0 auto;
 }
 p {
     font-size: 1.5vw;
